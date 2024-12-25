@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -7,7 +6,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dash', function () {
-    return view('dash');
+    return view('dash'); 
 });
 
 Route::get('/profile', function () {
@@ -21,3 +20,4 @@ Route::get('/planner', function () {
 Route::get('/notes', function () {
     return view('notes');
 });
+
