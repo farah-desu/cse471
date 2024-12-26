@@ -108,8 +108,8 @@ body {
     text-decoration: none; /* Removes underline from the link */
     color: inherit; /* Inherits the text color */
 }
-/* Profile Section */
-.profile-section {
+/* Profile Section and Stuff Section for planner */
+.profile-section,.planner-section {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
@@ -118,7 +118,8 @@ body {
     grid-template-columns: 1fr;
 }
 
-.academic-info, .profile-picture, .email-info,.uname {
+.academic-info, .profile-picture, .email-info,.uname,.tasks-section,.assignments-section
+,.goals-section{
     background-color: #2c2f3b;
     padding: 15px;
     border-radius: 10px;
@@ -203,3 +204,67 @@ p {
     width: 24px; /* Adjust size of the icon */
     height: 24px;
 }
+
+/* Main container for notes */
+.notes-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    color: white;
+    overflow-x: hidden; /* Prevent overflow outside the container */
+  }
+  
+  /* Add note button */
+  .add-note-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .add-note-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Scrollable notes container */
+  .notes-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .notes-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .notes-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Individual note card */
+  .note {
+    min-width: 200px;
+    padding: 15px;
+    background-color: #252850;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .note:hover {
+    background-color: #39416d;
+  }
+  
+  /* Prevent horizontal scrolling on the entire body */
+  body {
+    overflow-x: hidden;
+  }
+  

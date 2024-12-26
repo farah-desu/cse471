@@ -154,6 +154,15 @@ body {
     margin: 0;
     font-size: 1.8rem; /* Adjust font size as needed */
 }
+.profile-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid
+;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
 .menu-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit text color from parent */

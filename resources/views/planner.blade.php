@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mood Profile</title>
 
-    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="profile.css">
+    {{-- same style sheet as profile --}}
 </head>
 <body>
     <div class="dashboard">
@@ -49,8 +50,27 @@
                     </a>
                 </div>
             </header>
-            {{-- //DIFFERENT FOR PAGES// --}}
-            NEED TO DEVELOP
+            <section class="planner-section">
+                <div class="tasks-section">
+                    <h3>Tasks:</h3>
+                    <p>491 CONSULTATION</p>
+                    <p>350 ADC CIRCUIT</p>
+                    <p>341 PIN DIAGRAM</p>
+                    <button class="change-btn">Add Task</button>
+                </div>
+                <div class="assignments-section">
+                    <h3>Assignemnts due:</h3>
+                    <p>350 in 2 days</p>
+                    <p>471 in 1 day</p>
+                    <p>soc101 in 3 days</p>
+                    <button class="change-btn">Add Assignments</button>
+                </div>
+                <div class="goals-section">
+                    <h3>Goals :</h3>
+                    <p>COMPLETE 350 SYLLABUS</p>
+                    <button class="change-btn">Add Goals</button>
+                </div>
+            </section>
         </main>
     </div>
     
